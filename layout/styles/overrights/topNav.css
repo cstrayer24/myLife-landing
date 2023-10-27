@@ -1,22 +1,9 @@
 @import url("../vars.css");
 
 
-.topNav{
+.CompanyName{
+
 
 
     background-color: var(--Celadon);
-}
-
-
-.topNavLink{
-
-
-
-    background: var(--Celadon) !important;
-}
-
-.homeIcon{
-
-
-    color: var(--Emerald);
 }
