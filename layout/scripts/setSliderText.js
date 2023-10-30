@@ -1,15 +1,18 @@
 import getCurrentSliderPos from "./getCurrentSliderPos.js";
-const PHYSICAL_SILDE = 1;
+import setDietText from "./setDietText.js";
+import setPhysText from "./setPhysText.js";
+const PHYSICAL_SLIDE = 1;
 const DIET_SLIDE = 2;
 const MENTAL_SLIDE = 3;
 setInterval(() => {
   let cur = getCurrentSliderPos();
   switch (cur) {
-    case PHYSICAL_SILDE:
+    case PHYSICAL_SLIDE:
+      setPhysText();
       break;
 
     case DIET_SLIDE:
-      console.log("diet");
+      setDietText();
       break;
     case MENTAL_SLIDE:
       console.log("MENTAL");
