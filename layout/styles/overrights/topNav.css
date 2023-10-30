@@ -1,9 +1,9 @@
 @import url("../vars.css");
 
-
-.CompanyName{
-
-
-
-    background-color: var(--Celadon);
+.CompanyName {
+  background-color: var(--Celadon);
+  color: var(--Onyx);
+}
+.onyxText {
+  color: var(--Onyx);
 }
