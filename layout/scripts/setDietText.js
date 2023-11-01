@@ -3,8 +3,8 @@ function setDietText() {
   const bgDiv = document.querySelector("div.bgded.overlay");
   const pS = document.querySelectorAll("li.flex-active-slide>article>p")
   const btn = document.querySelector("li.flex-active-slide>article>footer>a")
-  bgDiv.style.backgroundImage =
-    "url('images/placeholders/diet-placeholder.png')";
+  // bgDiv.style.backgroundImage =
+  //   "url('images/placeholders/diet-placeholder.png')";
  pHead.textContent = "myLife" 
 
  const slider_head = document.querySelector("li.flex-active-slide>article>h3")
