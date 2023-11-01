@@ -1,5 +1,6 @@
 import getCurrentSliderPos from "./getCurrentSliderPos.js";
 import setDietText from "./setDietText.js";
+import setMentalText from "./setMentalText.js";
 import setPhysText from "./setPhysText.js";
 const PHYSICAL_SLIDE = 1;
 const DIET_SLIDE = 2;
@@ -15,7 +16,7 @@ setInterval(() => {
       setDietText();
       break;
     case MENTAL_SLIDE:
-      console.log("MENTAL");
+     setMentalText() 
       break;
   }
 });
