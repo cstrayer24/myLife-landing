@@ -1,0 +1,3 @@
+mainav .drop::after, #mainav li li .drop::after {
+    content: "";
+}
