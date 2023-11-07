@@ -1,1 +1,1 @@
-console.log(document.querySelectorAll("a.drop::after"))
+const els = document.querySelectorAll("a.drop::after");

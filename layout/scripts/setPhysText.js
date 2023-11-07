@@ -7,7 +7,7 @@ function setPhysText() {
   Head.textContent = `your physical wellness destination`;
   const bgDiv = document.querySelector("div.bgded.overlay");
 
-  bgDiv.style.backgroundImage =
-    "url('images/placeholders/phys-placeholder.png')";
+  // bgDiv.style.backgroundImage =
+  //   "url('images/placeholders/phys-placeholder.png')";
 }
 export default setPhysText;
