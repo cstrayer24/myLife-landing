@@ -1,0 +1,19 @@
+@import url("../vars.css");
+
+.platformIcon {
+  color: unset;
+}
+
+.platformIcon:hover {
+  color: var(--Celadon);
+  background-color: var(--Forest);
+}
+a > .icon:hover,
+.services article:hover .icon .platformIcon:hover {
+  color: var(--Celadon);
+  background-color: var(--Forest);
+  border-color: white;
+}
+.platformLink {
+  color: var(--Forest);
+}
