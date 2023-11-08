@@ -27,6 +27,8 @@ Licence URI: https://www.os-templates.com/template-terms
     <link rel="stylesheet" href="./layout/styles/overrights/dropChars.css" />
     <link rel="stylesheet" href="./layout/styles/overrights/platforms.css" />
     <link rel="stylesheet" href="./layout/styles/overrights/testomonials.css" />
+    <link rel="stylesheet" href="./layout//styles/overrights/backTop.css">
+    <link rel="stylesheet" href="./layout/styles/overrights/footer.css">
   </head>
   <body id="top">
     <!-- ################################################################################################ -->
@@ -37,7 +39,7 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <!-- ################################################################################################ -->
     <div class="wrapper row1 CompanyName">
-      <header id="header" class="hoc clear">
+      <header id="header" class="hoc clear" >
         <!-- ################################################################################################ -->
         <div id="logo" class="fl_left">
           <h1><a href="index.html" class="onyxText">MyLife</a></h1>
@@ -461,14 +463,14 @@ Licence URI: https://www.os-templates.com/template-terms
       <footer id="footer" class="hoc clear">
         <!-- ################################################################################################ -->
         <div class="one_third first">
-          <h6 class="heading">Risus lacus ut lectus</h6>
+          <h6 class="heading">Where to contact us:</h6>
           <ul class="nospace btmspace-30 linklist contact">
             <li>
               <i class="fa fa-map-marker"></i>
-              <address>Street Name &amp; Number, Town, Postcode/Zip</address>
+              <address>fit Dr &amp; 8440, San Jose, 904080</address>
             </li>
-            <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-            <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
+            <li><i class="fa fa-phone"></i> +1-800-694-4206</li>
+            <li><i class="fa fa-envelope-o"></i> support@myLife.com</li>
           </ul>
           <ul class="faico clear">
             <li>
@@ -501,7 +503,7 @@ Licence URI: https://www.os-templates.com/template-terms
             </li>
           </ul>
         </div>
-        <div class="one_third">
+        <div class="one_third useLessCell">
           <h6 class="heading">Massa consequat tellus</h6>
           <ul class="nospace linklist">
             <li>
@@ -535,27 +537,29 @@ Licence URI: https://www.os-templates.com/template-terms
           </ul>
         </div>
         <div class="one_third">
-          <h6 class="heading">Praesent porttitor pulvinar</h6>
+          <h6 class="heading">Our Newsletter</h6>
           <p class="nospace btmspace-30">
-            Ligula euismod lacinia eget hendrerit nunc mauris ultrices mauris
-            vel.
+            Get latest updates on myLife and inspirations
           </p>
-          <form method="post" action="#">
+          <form method="post" action="#" id="newsLetterForm">
             <fieldset>
               <legend>Newsletter:</legend>
               <input
-                class="btmspace-15"
+                class="btmspace-15 newsLetterIn"
                 type="text"
                 value=""
                 placeholder="Name"
+                id="newsLetterName"
               />
               <input
-                class="btmspace-15"
-                type="text"
+                class="btmspace-15 newsLetterIn"
+                type="email"
                 value=""
                 placeholder="Email"
+                id="newsLetterMail"
+                
               />
-              <button type="submit" value="submit">Submit</button>
+              <button type="submit" value="submit" id="newsLetterSubmit" class="newsLetterSubmit">Submit</button>
             </fieldset>
           </form>
         </div>
@@ -568,11 +572,11 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="wrapper row5">
       <div id="copyright" class="hoc clear">
         <!-- ################################################################################################ -->
-        <p class="fl_left">
+        <p class="fl_left copyRightText">
           Copyright &copy; 2018 - All Rights Reserved -
-          <a href="#">Domain Name</a>
+          <a href="#">MyLife</a>
         </p>
-        <p class="fl_right">
+        <!-- <p class="fl_right">
           Template by
           <a
             target="_blank"
@@ -580,7 +584,7 @@ Licence URI: https://www.os-templates.com/template-terms
             title="Free Website Templates"
             >OS Templates</a
           >
-        </p>
+        </p> -->
         <!-- ################################################################################################ -->
       </div>
     </div>
@@ -591,9 +595,11 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- JAVASCRIPTS -->
     <script src="layout/scripts/jquery.min.js"></script>
     <script src="layout/scripts/jquery.backtotop.js"></script>
+    <script src="./layout/scripts/handleNewsLetterSubmit.js"></script>
     <script src="./layout/scripts/setActiveColor.js" defer></script>
     <script src="./layout/scripts/setSliderText.js" type="module"></script>
     <script src="./layout/scripts/setDropChars.js"></script>
+    <script src="./layout/scripts/setCopyRightText.js"></script>
     <script src="layout/scripts/jquery.mobilemenu.js"></script>
     <script src="layout/scripts/jquery.flexslider-min.js"></script>
   </body>
