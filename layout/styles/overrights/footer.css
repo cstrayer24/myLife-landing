@@ -1,0 +1,45 @@
+@import url("../vars.css");
+
+div.wrapper.row5{
+
+
+
+    background-color:var(--Onyx) ;
+}
+div.wrapper.row4{
+background-color: var(--Onyx);
+}
+
+p.copyRightText >a{
+
+
+
+    background-color: transparent;
+}
+
+
+
+div.useLessCell{
+
+
+    visibility: hidden;
+}
+
+fieldset > button#newsLetterSubmit{
+
+
+   background-color: var(--Auquamarine);
+
+}
+
+#footer input{
+
+
+    outline: none;
+}
+
+#footer input:focus{
+
+
+ border-color: var(--Forest);
+}

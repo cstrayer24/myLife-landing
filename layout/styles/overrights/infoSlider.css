@@ -1,0 +1,19 @@
+@import url("../vars.css");
+footer >a.btn{
+
+color: white;
+background-color:var(--Auquamarine) ;
+border-color: var(--Auquamarine);
+
+
+}
+
+
+
+footer >a.btn.inverse:hover{
+
+background-color: var(--Auquamarine);
+border-color: var(--Auquamarine);
+
+
+}
