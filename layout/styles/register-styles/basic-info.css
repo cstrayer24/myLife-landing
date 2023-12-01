@@ -40,5 +40,25 @@
 }
 
 .mainSection-colors {
-  background-color: rgba(85, 92, 87, 1);
+  background-color: rgba(20, 21, 22, 0.3);
+}
+.mainSection-layout {
+  place-items: center;
+}
+
+/*form modal stuff*/
+
+.formModal-sizing {
+  z-index: 2;
+  height: calc(100% / 1.5);
+  width: calc(100% / 3);
+}
+
+.formModal-colors {
+  background-color: antiquewhite;
+  box-shadow: 10px 5px 5px black;
+}
+
+.formModal-border {
+  border-radius: 5px;
 }

@@ -22,3 +22,9 @@
 .enterprise-text {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+.grid {
+  display: grid;
+}
+.w-full {
+  width: 100%;
+}
