@@ -1,0 +1,24 @@
+@import url("./vars.css");
+
+.text-celadon {
+  color: var(--Celadon);
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-ghost {
+  color: ghostwhite;
+}
+.text-center {
+  text-align: center;
+}
+
+.enterprise-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}

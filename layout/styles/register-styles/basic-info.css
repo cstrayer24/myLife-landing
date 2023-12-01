@@ -1,0 +1,44 @@
+@import url("../vars.css");
+
+/*local vars*/
+:root {
+  --header-height: 165px;
+}
+/*header stuff*/
+.header-sizes {
+  width: 100vw;
+  margin: 0;
+  /* position: absolute; */
+  padding: 0;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  z-index: 1;
+}
+.header-border {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header-color {
+  background-color: var(--Onyx);
+}
+
+.bold-header {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.register-tagline {
+  font-weight: 500;
+  font-size: larger;
+}
+/*main section stuff*/
+.mainSection-sizes {
+  height: calc(100vh - 140px);
+  z-index: 1;
+  position: relative;
+}
+
+.mainSection-colors {
+  background-color: rgba(85, 92, 87, 1);
+}
