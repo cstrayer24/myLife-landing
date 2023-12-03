@@ -50,15 +50,21 @@
 
 .formModal-sizing {
   z-index: 2;
-  height: calc(100% / 1.5);
+  height: calc(100% / 1.1);
   width: calc(100% / 3);
 }
 
 .formModal-colors {
-  background-color: antiquewhite;
+  background-color: white;
   box-shadow: 10px 5px 5px black;
 }
 
 .formModal-border {
   border-radius: 5px;
+}
+
+.reg-form-layout {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
 }
