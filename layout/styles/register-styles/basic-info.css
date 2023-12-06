@@ -52,6 +52,7 @@
   z-index: 2;
   height: calc(100% / 1.1);
   width: calc(100% / 3);
+
 }
 
 .formModal-colors {
@@ -67,4 +68,43 @@
   display: flex;
   flex-flow: column;
   gap: 10px;
+}
+
+.form-feild-container{
+
+
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form-feild{
+
+
+  /* z-index: 1; */
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+
+  height: 30px;
+  border-color: gray;
+  border-width: 1px;
+  border-radius: 15px;
+}
+.form-label-pos{
+
+/* z-index: 0; */
+position: absolute;
+align-self: center;
+justify-self: center;
+cursor: text;
+  user-select: none;
+}
+
+
+.modal-head{
+
+display: block;
+  margin-bottom: 30px;
 }
