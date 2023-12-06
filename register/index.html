@@ -32,7 +32,7 @@
         class="w-screen mainSection-sizes mainSection-colors grid mainSection-layout"
       >
         <div class="formModal-sizing formModal-colors formModal-border">
-          <span class="w-full">
+          <span class="w-full modal-head">
             <h3 class="text-center">Basic registration</h3>
             <h4 class="text-center">
               we just need to start with some basic information
@@ -40,11 +40,27 @@
             <hr />
           </span>
           <form action="" class="reg-form-layout">
-            <input type="text" name="first_name" id="" />
-            <input type="text" name="last_name" id="" />
-            <input type="text" name="username" id="" />
-            <input type="email" name="email" id="" />
-            <input type="password" name="psswd" id="" />
+            <div class="form-feild-container">
+              <label for="first_name" class="form-label-pos">firstname</label>
+              <input type="text" name="first_name"  class="form-feild"/>
+            </div>
+            <div class="form-feild-container">
+              <label for="last_name" class="form-label-pos">lastname</label>
+              <input type="text" name="last_name"   class="form-feild"/>
+            </div>
+            <div class="form-feild-container">
+              <label for="username" class="form-label-pos">username</label>
+              <input type="text" name="username" class="form-feild" />
+            </div>
+            <div class="form-feild-container">
+              <label for="email" class="form-label-pos">mail</label>
+              <input type="email" name="email"  class="form-feild"/>
+            </div>
+
+<div class="form-feild-container">
+<label for="psswd" class="form-label-pos">password</label>
+  <input type="password" name="psswd"  class="form-feild"/>
+</div>
           </form>
         </div>
       </section>
@@ -52,5 +68,7 @@
 
     <!-- scripts -->
     <script src="../layout/scripts/handleBasicInfoSubmit.js" defer></script>
+    <script src="../layout/scripts/register-scripts/touch-basic-registration.js"></script>
+
   </body>
 </html>
