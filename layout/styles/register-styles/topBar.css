@@ -1,0 +1,11 @@
+@import url("../vars.css");
+
+.topBarSizing {
+  display: block;
+  width: 100vw;
+  height: 500px;
+}
+
+.topBarColors {
+  background-color: --Onyx;
+}
