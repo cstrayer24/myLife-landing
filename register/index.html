@@ -41,26 +41,36 @@
           </span>
           <form action="" class="reg-form-layout">
             <div class="form-feild-container">
-              <label for="first_name" class="form-label-pos">firstname</label>
-              <input type="text" name="first_name"  class="form-feild"/>
+              <label for="first_name" class="form-label-pos form-label">firstname</label>
+              <input type="text" id="first_name"  class="form-feild"/>
             </div>
             <div class="form-feild-container">
-              <label for="last_name" class="form-label-pos">lastname</label>
-              <input type="text" name="last_name"   class="form-feild"/>
+              <label for="last_name" class="form-label-pos form-label">lastname</label>
+              <input type="text" id="last_name"   class="form-feild"/>
             </div>
             <div class="form-feild-container">
-              <label for="username" class="form-label-pos">username</label>
-              <input type="text" name="username" class="form-feild" />
+              <label for="username" class="form-label-pos form-label">username</label>
+              <input type="text" id="username" class="form-feild" />
             </div>
             <div class="form-feild-container">
-              <label for="email" class="form-label-pos">mail</label>
-              <input type="email" name="email"  class="form-feild"/>
+              <label for="email" class="form-label-pos form-label">mail</label>
+              <input type="email" id="email"  class="form-feild"/>
             </div>
 
 <div class="form-feild-container">
-<label for="psswd" class="form-label-pos">password</label>
-  <input type="password" name="psswd"  class="form-feild"/>
+<label for="psswd" class="form-label-pos form-label">password</label>
+  <input type="password" id="psswd"  class="form-feild"/>
 </div>
+
+
+<fieldset>
+  <legend>Gender</legend>
+  <input type="radio" id="male">
+  <label for="male">male</label>
+  <input type="radio" id="female">
+  
+  
+</fieldset>
           </form>
         </div>
       </section>
@@ -68,7 +78,7 @@
 
     <!-- scripts -->
     <script src="../layout/scripts/handleBasicInfoSubmit.js" defer></script>
-    <script src="../layout/scripts/register-scripts/touch-basic-registration.js"></script>
+    <script src="../layout/scripts/register-scripts/touch-basic-registration.js" defer></script>
 
   </body>
 </html>
