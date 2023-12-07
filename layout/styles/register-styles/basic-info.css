@@ -34,7 +34,7 @@
 }
 /*main section stuff*/
 .mainSection-sizes {
-  height: calc(100vh - 140px);
+  height: 50rem;
   z-index: 1;
   position: relative;
 }
@@ -91,6 +91,7 @@
   border-color: gray;
   border-width: 1px;
   border-radius: 15px;
+  border-style: solid;
 }
 .form-label-pos{
 
@@ -98,10 +99,14 @@
 position: absolute;
 align-self: center;
 justify-self: center;
-cursor: text;
-  user-select: none;
 }
+.form-label{
+  opacity: 0.5;
+  cursor: text;
+  user-select: none;
 
+
+}
 
 .modal-head{
 
