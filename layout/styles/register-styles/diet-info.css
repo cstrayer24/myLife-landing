@@ -20,7 +20,7 @@
   border-bottom-right-radius: 5px;
 }
 .header-color {
-  background-color: var(--Onyx);
+  background-color: rgba(247, 10, 10,0.75);
 }
 
 .bold-header {
@@ -40,7 +40,8 @@
 }
 
 .mainSection-colors {
-  background-color: rgba(20, 21, 22, 0.3);
+  background-color: rgba(150, 71, 10, 0.3);
+
 }
 .mainSection-layout {
   place-items: center;
@@ -53,6 +54,7 @@
   height: calc(100% / 1.1);
   width: calc(100% / 3);
   position: relative;
+  overflow-y: scroll;
 }
 
 .formModal-colors {
@@ -106,25 +108,7 @@
   margin-bottom: 30px;
 }
 
-.gender-picker-size {
-  width: 150px;
-  margin-left: 20px;
-  margin-bottom: 1rem;
-}
-/*dob stuff*/
-.dob-container{
 
-
-  margin-left: 1rem;
-  margin-bottom: 2rem;
-
-}
-.dob-picker{
-
-
-  width: 10rem;
-  outline: none;
-}
 /*submit button stuff*/
 
 
@@ -134,6 +118,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
 
@@ -144,6 +129,7 @@ box-sizing: border-box;
   padding: 1rem;
   border-radius: 1.5rem;
   border-width: 1px;
+  border-color: rgba(247, 10, 10,0.75);
 background-color: white;
 cursor: pointer;
 transition: all 500ms linear 0s;
@@ -152,7 +138,7 @@ transition: all 500ms linear 0s;
 .subBtn:hover{
 
 
-  background-color: black;
+  background-color: rgba(247, 10, 10,0.75);
   color: white;
   font-weight: bold;
 }
@@ -163,3 +149,69 @@ transition: all 500ms linear 0s;
   right: 2px;
   bottom: 0;
 }
+
+
+
+.allergies_default{
+display: none;
+
+
+}
+
+.allergies{
+border-width: 1px;
+border-radius: 5px;
+width: 50%;
+margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+justify-content: center;
+}
+
+
+.diet-choice{
+
+
+  margin-left: 10px;
+  border-color: rgba(247, 10, 10,0.75);
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  width: 250px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.weight-in{
+
+
+  width: 80%;
+  border-top-left-radius: 5px;
+
+}
+
+fieldset{
+
+  border-color: rgba(247, 10, 10,0.75);
+
+}
+
+
+
+.disease_default{
+  display: none;
+  
+  
+  }
+
+  .disease{
+
+    border-width: 1px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 10px;
+      display: flex;
+      flex-flow: column;
+    justify-content: center;
+
+  }

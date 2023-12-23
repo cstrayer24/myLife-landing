@@ -39,46 +39,62 @@
             </h4>
             <hr />
           </span>
-          <form action="" class="reg-form-layout">
+          <form action="" class="reg-form-layout" id="main_form" >
             <div class="form-feild-container">
               <label for="first_name" class="form-label-pos form-label">firstname</label>
-              <input type="text" id="first_name"  class="form-feild"/>
+              <input type="text" id="first_name" name="firstname"  class="form-feild" required/>
             </div>
             <div class="form-feild-container">
               <label for="last_name" class="form-label-pos form-label">lastname</label>
-              <input type="text" id="last_name"   class="form-feild"/>
+              <input type="text" id="last_name"  name="lastname" class="form-feild" required/>
             </div>
             <div class="form-feild-container">
               <label for="username" class="form-label-pos form-label">username</label>
-              <input type="text" id="username" class="form-feild" />
+              <input type="text" id="username" name="username" class="form-feild" required/>
             </div>
             <div class="form-feild-container">
               <label for="email" class="form-label-pos form-label">mail</label>
-              <input type="email" id="email"  class="form-feild"/>
+              <input type="email" id="email"  class="form-feild" name="mail" required/>
             </div>
 
 <div class="form-feild-container">
 <label for="psswd" class="form-label-pos form-label">password</label>
-  <input type="password" id="psswd"  class="form-feild"/>
+  <input type="password" id="psswd" name="password" class="form-feild" required/>
 </div>
 
 
-<fieldset>
+<fieldset class="gender-picker-size">
   <legend>Gender</legend>
-  <input type="radio" id="male">
+  <input type="radio" id="male" name="sex" value="male">
   <label for="male">male</label>
-  <input type="radio" id="female">
+  <br>
+  <input type="radio" id="female" name="sex" value="female">
+  <label for="female">female</label>
   
   
 </fieldset>
+
+<div class="dob-container">
+
+  <label for="dob">dob:</label>
+  <input type="date" name="birthday" class="dob-picker" id="dob">
+</div>
+
+<span class="subBtn-container">
+  <button class="subBtn">Submit</button>
+</span>
           </form>
+
+
+          <p class="step-count"></p>
         </div>
       </section>
     </main>
 
     <!-- scripts -->
-    <script src="../layout/scripts/handleBasicInfoSubmit.js" defer></script>
+    <script src="../layout/scripts/register-scripts/handleBasicInfoSubmit.js" defer type="module"></script>
     <script src="../layout/scripts/register-scripts/touch-basic-registration.js" defer></script>
+    <script src="../layout/scripts/register-scripts/initStep1.js" defer></script>
 
   </body>
 </html>
