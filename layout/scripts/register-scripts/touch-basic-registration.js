@@ -16,12 +16,14 @@ v.children[1].addEventListener("focus",(e)=>{
 
    v.children[0].style.transform = "translateY(-30px)";
    v.children[1].style.borderWidth = "2px"
-   v.children.style.borderColor = "rgb(0,0,0)"
+   v.children[0].style.opacity = "1";
+   v.children[0].style.borderColor = "rgb(0,0,0)"
 })
 
 v.children[1].addEventListener("blur",(e)=>{
 
     v.children[0].style.transform = "translateY(0)";
+    v.children[0].style.opacity = "0.5"
     v.children[1].style.borderWidth="1px"
 })
 
