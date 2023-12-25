@@ -1,5 +1,9 @@
 @import url("./vars.css");
+.text-black{
 
+
+  color: black;
+}
 .text-celadon {
   color: var(--Celadon);
 }

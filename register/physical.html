@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myLife</title>
+
+    <link
+      rel="stylesheet"
+      href="../layout/styles/register-styles/physical-info.css"
+    />
+    <link rel="stylesheet" href="../layout/styles/utilitys.css" />
+    <link rel="stylesheet" href="../layout/styles/register-styles/root.css" />
+    <title>myLife | get started</title>
+  </head>
+  <body>
+    <main>
+      <header class="header-sizes header-color">
+        <span class="w-screen bold-header">
+          <h1 class="text-center enterprise-text text-black">Registration</h1>
+        </span>
+        <span class="w-screen text-black text-center register-tagline">
+          <p>Your journey to the life you want begins here</p>
+        </span>
+      </header>
+
+      <section
+        class="w-screen mainSection-sizes mainSection-colors grid mainSection-layout"
+      >
+        <div class="formModal-sizing formModal-colors formModal-border">
+          <span class="w-full modal-head">
+            <h3 class="text-center">Dietary registration</h3>
+            <h4 class="text-center">
+              Help us plan the proper fuel for your body
+            </h4>
+            <hr />
+          </span>
+          <form action="" class="reg-form-layout" id="main_form">
+            <!-- <div class="form-feild-container">
+              <label for="allergy_checkbox">Do you have any allergies </label>
+              <input type="checkbox" name="has_allergy" id="allergy_checkbox" />
+            </div>
+
+            <fieldset id="allergy_picker" class="allergies_default">
+              <legend>which allergies</legend>
+
+              <div>
+                <input type="checkbox" name="peanuts" id="peanuts" />
+                <label for="peanuts">peanuts</label>
+              </div>
+              <div>
+                <input type="checkbox" name="milk" id="milk" />
+                <label for="milk">milk</label>
+              </div>
+              <div>
+                <input type="checkbox" name="eggs" id="eggs" />
+                <label for="eggs">eggs</label>
+              </div>
+              <div>
+                <input type="checkbox" name="treeNuts" id="tree_nuts" />
+                <label for="tree_nuts">tree nuts</label>
+              </div>
+              <div>
+                <input type="checkbox" name="sesame" id="sesame" />
+                <label for="sesame">sesame</label>
+              </div>
+              <div>
+                <input type="checkbox" name="soy" id="soy" />
+                <label for="soy">soy</label>
+              </div>
+              <div>
+                <input type="checkbox" name="fish" id="fish" />
+                <label for="fish">fish</label>
+              </div>
+              <div>
+                <input type="checkbox" name="shellfish" id="shellfish" />
+                <label for="shellfish">shellfish</label>
+              </div>
+            </fieldset>
+
+            <div class="diet-choice">
+              <h3>Current diet:</h3>
+              <div>
+                <input
+                  type="radio"
+                  id="vegan"
+                  name="existingDiet"
+                  value="vegan"
+                />
+
+                <label for="vegan">vegan</label>
+              </div>
+
+              <div>
+                <input
+                  type="radio"
+                  id="vegetarian"
+                  name="existingDiet"
+                  value="vegetarian"
+                />
+                <label for="vegetarian">vegetarian</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="paleo"
+                  name="existingDiet"
+                  value="paleo"
+                />
+                <label for="paleo">paleo</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Mediterranean"
+                  value="Mediterranean"
+                  name="existingDiet"
+                />
+                <label for="Mediterranean">Mediterranean diet</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="keto"
+                  value="keto"
+                  name="existingDiet"
+                />
+                <label for="keto">keto diet</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="none"
+                  value="none"
+                  name="existingDiet"
+                  required
+                />
+                <label for="none">none</label>
+              </div>
+            </div>
+            <div class="diet-choice">
+              <h3>Religious Considerations:</h3>
+              <div>
+                <input
+                  type="radio"
+                  id="kosher"
+                  name="religionDiet"
+                  value="kosher"
+                />
+                <label for="kosher">Jewish kosher</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="halal"
+                  name="religionDiet"
+                  value="halal"
+                />
+                <label for="halal">Muslim Halal</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="Ahimsa"
+                  name="religionDiet"
+                  value="Ahimsa"
+                />
+                <label for="Ahimsa">Hindu Ahimsa</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="no_religion"
+                  name="religionDiet"
+                  value="no_religion"
+                  required
+                />
+                <label for="no_religion">None</label>
+              </div>
+            </div>
+            <div class="form-feild-container">
+              <label for="hasDietDisease"
+                >do you have any diseases that impact diet
+              </label>
+              <input
+                type="checkbox"
+                name="hasDietDisease"
+                id="hasDietDisease"
+              />
+            </div>
+
+            <fieldset class="disease_default" id="disease_options">
+              <legend>which ones</legend>
+              <div>
+                <input type="checkbox" name="diabetes" id="Diabetes" />
+                <label for="Diabetes">Diabetes</label>
+              </div>
+              <div>
+                <input type="checkbox" name="heartFailure" id="Heart_Failure" />
+                <label for="Heart_Failure">Heart Failure</label>
+              </div>
+              <div>
+                <input type="checkbox" name="arthritis" id="Arthritis" />
+                <label for="Arthritis">Arthritis</label>
+              </div>
+              <div>
+                <input type="checkbox" name="obesity" id="Obesity" />
+                <label for="Obesity">Obesity</label>
+              </div>
+              <div>
+                <input type="checkbox" name="cancer" id="Cancer" />
+                <label for="Cancer">Cancer</label>
+              </div>
+              <div>
+                <input type="checkbox" name="COPD" id="COPD" />
+                <label for="COPD">COPD</label>
+              </div>
+              <div>
+                <input type="checkbox" name="strokes" id="strokes" />
+                <label for="strokes">strokes</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="kidneyDisease"
+                  id="kidney_disease"
+                />
+                <label for="kidney_disease">kidney disease</label>
+              </div>
+            </fieldset> -->
+            <span class="subBtn-container">
+              <button class="subBtn">Submit</button>
+            </span>
+          </form>
+
+          <p class="step-count"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- scripts -->
+    <!-- <script
+      src="../layout/scripts/register-scripts/diet-reactiveUI.js"
+      type="module"
+    ></script>
+    <script
+      src="../layout/scripts/register-scripts/handleDietSubmit.js"
+      type="module" -->
+    <!-- ></script>  -->
+  </body>
+</html>
