@@ -87,9 +87,10 @@
   outline: none;
 
   height: 30px;
-  border-color: gray;
+  border-color: var(--Emerald);
   border-width: 1px;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   border-style: solid;
 }
 .form-label-pos {
@@ -102,6 +103,7 @@
   opacity: 0.5;
   cursor: text;
   user-select: none;
+  color: var(--Celadon);
 }
 
 .modal-head {
@@ -129,6 +131,7 @@ box-sizing: border-box;
   width: 8rem;
   padding: 1rem;
   border-radius: 1.5rem;
+  border-style: solid;
   border-width: 1px;
   border-color: var(--Emerald);
 background-color: white;
@@ -152,12 +155,6 @@ transition: all 500ms linear 0s;
 }
 
 
-
-.allergies_default{
-display: none;
-
-
-}
 
 .allergies{
 border-width: 1px;
@@ -186,15 +183,23 @@ justify-content: center;
 .weight-in{
 
 
-  width: 80%;
-  border-top-left-radius: 5px;
+  /* width: 80%; */
+  /* border-top-left-radius: 5px; */
+  margin-right: 5px;
 
 }
 
+
+.unit{
+
+display: flex;
+align-items: center;
+color: var(--Forest);
+}
 fieldset{
 
-  border-color: rgba(247, 10, 10,0.75);
-
+  border-color: var(--Celadon);
+border-style: solid;
 }
 
 
@@ -216,3 +221,81 @@ fieldset{
     justify-content: center;
 
   }
+
+
+ .height_feild{
+
+  width: 80%;
+display: flex;
+gap: 1px;
+margin-left: 5px;
+
+ }
+.ft_input{
+
+
+
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--Celadon);
+  width: 100px;
+
+margin-right: 5px;
+
+} 
+
+.ft_input_container{
+
+  margin-right: 20px;
+}
+.disabilities_default{
+
+
+  display: none;
+}
+
+.disabilities_list{
+
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left:5px;
+border-radius: 5px;
+}
+
+
+.options_set{
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left:5px;
+
+  border-radius: 5px;
+}
+
+.btn_allignment{
+
+
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+}
+
+.strengthSetContainer{
+width: 100%;
+display: flex;
+justify-content: center;
+gap:15px;
+align-items: center;
+}
+.strengthSet{
+padding: 15px;
+width: fit-content;
+justify-self: center;
+
+}
