@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myLife</title>
+
+    <link
+      rel="stylesheet"
+      href="../layout/styles/register-styles/mental-info.css"
+    />
+    <link rel="stylesheet" href="../layout/styles/utilitys.css" />
+    <link rel="stylesheet" href="../layout/styles/register-styles/root.css" />
+    <title>myLife | get started</title>
+  </head>
+  <body>
+    <main>
+      <header class="header-sizes header-color">
+        <span class="w-screen bold-header">
+          <h1 class="text-center enterprise-text text-white">Registration</h1>
+        </span>
+        <span class="w-screen text-white text-center register-tagline">
+          <p>Your journey to the life you want begins here</p>
+        </span>
+      </header>
+
+      <section
+        class="w-screen mainSection-sizes mainSection-colors grid mainSection-layout"
+      >
+        <div class="formModal-sizing formModal-colors formModal-border">
+          <span class="w-full modal-head">
+            <h3 class="text-center">Mental registration</h3>
+            <h4 class="text-center">
+              strong mind strong body strong body strong mind
+            </h4>
+            <hr />
+          </span>
+          <form action="" class="reg-form-layout" id="main_form">
+            <div class="form-feild-container">
+              <input type="checkbox" name="hasMentalIssues" id="illness" />
+              <label for="illness"
+                >do you have any mental health problems currently</label
+              >
+            </div>
+
+            <fieldset class="disease_default" id="illnessList">
+              <legend>which ones?</legend>
+
+              <div>
+                <input type="checkbox" name="hasAnxiety" id="anxiety" />
+                <label for="anxiety">anxiety</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasDepression" id="depression" />
+                <label for="depression">depression</label>
+              </div>
+
+              <div>
+                <input type="checkbox" name="hasADHD" id="ADHD" />
+                <label for="ADHD">ADHD</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasOCD" id="ocd" />
+                <label for="ocd">ocd</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasAutism" id="autism" />
+                <label for="autism">autism</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasSchizophrenia" id="schizo" />
+                <label for="schizo">Schizophrenia</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasPTSD" id="ptsd" />
+                <label for="ptsd">PTSD</label>
+              </div>
+              <div>
+                <input type="checkbox" name="hasBipolarDepression" id="bpd_1" />
+                <label for="bpd_1">Bipolar Depression</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  name="hasBorderLinePersonality"
+                  id="bpd_2"
+                />
+                <label for="bpd_2">BPD</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="strengthSet">
+              <legend>rate your current happiness</legend>
+              <input type="radio" name="happiness_level" value="1" id="Hap1" />
+              <label for="Hap1">1</label>
+              <input type="radio" name="happiness_level" value="2" id="Hap2" />
+              <label for="Hap2">2</label>
+              <input type="radio" name="happiness_level" value="3" id="Hap3" />
+              <label for="Hap3">3</label>
+              <input type="radio" name="happiness_level" value="4" id="Hap4" />
+              <label for="Hap4">4</label>
+              <input type="radio" name="happiness_level" value="5" id="Hap5" />
+              <label for="Hap4">5</label>
+            </fieldset>
+
+            <div class="form-feild-container">
+              <input type="checkbox" name="isReligious" id="isReligious" />
+              <label for="isReligious">are you religious?</label>
+            </div>
+            <fieldset id="religion_set" class="disease_default">
+              <legend>which do you practice</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="current_religion"
+                  id="christianity"
+                  value="christianity"
+                />
+                <label for="christianity">christianity</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="current_religion"
+                  id="judaism"
+                  value="judaism"
+                />
+                <label for="judaism">judaism</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="current_religion"
+                  id="islam"
+                  value="islam"
+                />
+                <label for="islam">islam</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="current_religion"
+                  id="hinduism"
+                  value="hinduism"
+                />
+                <label for="hinduism">hinduism</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="current_religion"
+                  id="buddhism"
+                  value="buddhism"
+                />
+                <label for="buddhism">buddhism</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="disease">
+              <legend>what is your relationship status</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="relationship_status"
+                  id="married"
+                  value="married"
+                  required
+                />
+                <label for="married">married</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="relationship_status"
+                  id="engaged"
+                  value="engaged"
+                />
+                <label for="engaged">engaged</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="relationship_status"
+                  id="dating"
+                  value="dating"
+                />
+                <label for="dating">dating</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="relationship_status"
+                  id="single"
+                  value="single"
+                />
+                <label for="single">single</label>
+              </div>
+            </fieldset>
+            <!--
+  employment statuses
+  1.employed
+  2.self-employed
+  3.looking
+  4.in school
+  5.unemployed
+-->
+
+            <fieldset class="disease">
+              <legend>what is your employment status</legend>
+              <div>
+                <input
+                  type="radio"
+                  name="employment_status"
+                  id="employed"
+                  value="employed"
+                />
+                <label for="employed">employed</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="employment_status"
+                  id="self-employed"
+                  value="self-employed"
+                />
+                <label for="self-employed">self-employed</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="employment_status"
+                  id="looking"
+                  value="looking"
+                />
+                <label for="looking">looking</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="employment_status"
+                  id="schooling"
+                  value="schooling"
+                />
+                <label for="schooling">in school</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  name="employment_status"
+                  id="unemployed"
+                  value="unemployed"
+                />
+                <label for="unemployed">unemployed</label>
+              </div>
+            </fieldset>
+            <span class="subBtn-container">
+              <button class="subBtn">Submit</button>
+            </span>
+          </form>
+          <p class="step-count"></p>
+        </div>
+      </section>
+    </main>
+
+    <!-- scripts -->
+
+    <script
+      src="../layout/scripts/register-scripts/mental-reactiveUI.js"
+      defer
+    ></script>
+    <script
+      src="../layout/scripts/register-scripts/handleMentalSubmit.js"
+      defer
+      type="module"
+    ></script>
+  </body>
+</html>

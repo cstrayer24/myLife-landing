@@ -56,6 +56,6 @@ form.addEventListener("submit", async (e) => {
   });
 
   if (res.ok) {
-    console.log(res);
+    window.location.assign("/register/mental.html")
   }
 });
