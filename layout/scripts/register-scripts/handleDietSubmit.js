@@ -22,6 +22,7 @@ form.addEventListener("submit", async (e) => {
   if (dataRawObj.existingDiet !== "none") {
     bodyObj.currentDiet = dataRawObj.existingDiet;
   }
+  //check disease
   if (
     Object.keys(dataRawObj).includes("hasDietDisease") &&
     dataRawObj["hasDietDisease"] !== "off"
@@ -45,6 +46,7 @@ form.addEventListener("submit", async (e) => {
       bodyObj.diseases.push(diseaseList[i]);
     }
   }
+  //check allergies
   if (
     Object.keys(dataRawObj).includes("has_allergy") &&
     dataRawObj["has_allergy"] !== "off"
@@ -78,5 +80,7 @@ form.addEventListener("submit", async (e) => {
     },
   });
 
-  console.log(res);
+  if (res.ok) {
+    window.location.assign("/register/physical.html");
+  }
 });

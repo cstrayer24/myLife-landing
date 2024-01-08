@@ -20,8 +20,8 @@
   border-bottom-right-radius: 5px;
 }
 .header-color {
-  background-color: var(--Forest);
-  color: black;
+  background-color: #02CCFE;
+  color: white;
 }
 
 .bold-header {
@@ -41,7 +41,7 @@
 }
 
 .mainSection-colors {
-  background-color: #7BD389;
+  background-color: var(--Celadon);
 
 }
 .mainSection-layout {
@@ -133,7 +133,7 @@ box-sizing: border-box;
   border-radius: 1.5rem;
   border-style: solid;
   border-width: 1px;
-  border-color: var(--Emerald);
+  border-color: #02CCFE;;
 background-color: white;
 cursor: pointer;
 transition: all 500ms linear 0s;
@@ -142,7 +142,7 @@ transition: all 500ms linear 0s;
 .subBtn:hover{
 
 
-  background-color: var(--Emerald);
+  background-color: #02CCFE;
   color: white;
   font-weight: bold;
 }
@@ -198,7 +198,7 @@ color: var(--Forest);
 }
 fieldset{
 
-  border-color: var(--Celadon);
+  border-color: #02CCFE ;
 border-style: solid;
 }
 

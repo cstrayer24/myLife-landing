@@ -29,205 +29,187 @@
       >
         <div class="formModal-sizing formModal-colors formModal-border">
           <span class="w-full modal-head">
-            <h3 class="text-center">Dietary registration</h3>
+            <h3 class="text-center">Physical registration</h3>
             <h4 class="text-center">
-              Help us plan the proper fuel for your body
+              The info needed to sculp your body into a master-piece
             </h4>
             <hr />
           </span>
           <form action="" class="reg-form-layout" id="main_form">
-            <!-- <div class="form-feild-container">
-              <label for="allergy_checkbox">Do you have any allergies </label>
-              <input type="checkbox" name="has_allergy" id="allergy_checkbox" />
-            </div>
-
-            <fieldset id="allergy_picker" class="allergies_default">
-              <legend>which allergies</legend>
-
-              <div>
-                <input type="checkbox" name="peanuts" id="peanuts" />
-                <label for="peanuts">peanuts</label>
-              </div>
-              <div>
-                <input type="checkbox" name="milk" id="milk" />
-                <label for="milk">milk</label>
-              </div>
-              <div>
-                <input type="checkbox" name="eggs" id="eggs" />
-                <label for="eggs">eggs</label>
-              </div>
-              <div>
-                <input type="checkbox" name="treeNuts" id="tree_nuts" />
-                <label for="tree_nuts">tree nuts</label>
-              </div>
-              <div>
-                <input type="checkbox" name="sesame" id="sesame" />
-                <label for="sesame">sesame</label>
-              </div>
-              <div>
-                <input type="checkbox" name="soy" id="soy" />
-                <label for="soy">soy</label>
-              </div>
-              <div>
-                <input type="checkbox" name="fish" id="fish" />
-                <label for="fish">fish</label>
-              </div>
-              <div>
-                <input type="checkbox" name="shellfish" id="shellfish" />
-                <label for="shellfish">shellfish</label>
-              </div>
-            </fieldset>
-
-            <div class="diet-choice">
-              <h3>Current diet:</h3>
-              <div>
-                <input
-                  type="radio"
-                  id="vegan"
-                  name="existingDiet"
-                  value="vegan"
-                />
-
-                <label for="vegan">vegan</label>
-              </div>
-
-              <div>
-                <input
-                  type="radio"
-                  id="vegetarian"
-                  name="existingDiet"
-                  value="vegetarian"
-                />
-                <label for="vegetarian">vegetarian</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="paleo"
-                  name="existingDiet"
-                  value="paleo"
-                />
-                <label for="paleo">paleo</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="Mediterranean"
-                  value="Mediterranean"
-                  name="existingDiet"
-                />
-                <label for="Mediterranean">Mediterranean diet</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="keto"
-                  value="keto"
-                  name="existingDiet"
-                />
-                <label for="keto">keto diet</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="none"
-                  value="none"
-                  name="existingDiet"
-                  required
-                />
-                <label for="none">none</label>
-              </div>
-            </div>
-            <div class="diet-choice">
-              <h3>Religious Considerations:</h3>
-              <div>
-                <input
-                  type="radio"
-                  id="kosher"
-                  name="religionDiet"
-                  value="kosher"
-                />
-                <label for="kosher">Jewish kosher</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="halal"
-                  name="religionDiet"
-                  value="halal"
-                />
-                <label for="halal">Muslim Halal</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="Ahimsa"
-                  name="religionDiet"
-                  value="Ahimsa"
-                />
-                <label for="Ahimsa">Hindu Ahimsa</label>
-              </div>
-              <div>
-                <input
-                  type="radio"
-                  id="no_religion"
-                  name="religionDiet"
-                  value="no_religion"
-                  required
-                />
-                <label for="no_religion">None</label>
-              </div>
-            </div>
             <div class="form-feild-container">
-              <label for="hasDietDisease"
-                >do you have any diseases that impact diet
-              </label>
+              <label for="weight-input" class="form-label-pos form-label"
+                >How much do you weigh?(lbs)</label
+              >
               <input
-                type="checkbox"
-                name="hasDietDisease"
-                id="hasDietDisease"
+                type="number"
+                name="weight"
+                id="weight-input"
+                class="form-feild weight-in"
+                min="1"
+                max="14000"
+                required
               />
+              <span class="unit">
+                <span>lbs</span>
+              </span>
             </div>
 
-            <fieldset class="disease_default" id="disease_options">
+            <fieldset class="height_feild">
+              <legend>how tall are you</legend>
+              <span class="ft_input_container">
+                <input
+                  type="number"
+                  name="height_feet"
+                  id="ft"
+                  min="2"
+                  max="8"
+                  class="ft_input"
+                  required
+                />
+                <label for="ft">ft</label>
+              </span>
+              <input
+                type="number"
+                name="height_inches"
+                id="in"
+                min="0"
+                max="11"
+                class="ft_input"
+                required
+              />
+              <label for="in">in</label>
+            </fieldset>
+            <div class="form-feild-container">
+              <input type="checkbox" id="disabilities" name="has_disability" />
+              <label for="disabilities"
+                >do you have any physical disabilities</label
+              >
+            </div>
+            <fieldset class="disabilities_default" id="disablitiesList">
               <legend>which ones</legend>
               <div>
-                <input type="checkbox" name="diabetes" id="Diabetes" />
-                <label for="Diabetes">Diabetes</label>
+                <input type="checkbox" id="missing_arm" name="hasMissingArm" />
+                <label for="missing_arm">missing Arm(s)</label>
               </div>
               <div>
-                <input type="checkbox" name="heartFailure" id="Heart_Failure" />
-                <label for="Heart_Failure">Heart Failure</label>
+                <input type="checkbox" id="missing_leg" name="hasMissingLeg" />
+                <label for="missing_leg">missing Leg(s)</label>
               </div>
               <div>
-                <input type="checkbox" name="arthritis" id="Arthritis" />
-                <label for="Arthritis">Arthritis</label>
-              </div>
-              <div>
-                <input type="checkbox" name="obesity" id="Obesity" />
-                <label for="Obesity">Obesity</label>
-              </div>
-              <div>
-                <input type="checkbox" name="cancer" id="Cancer" />
-                <label for="Cancer">Cancer</label>
-              </div>
-              <div>
-                <input type="checkbox" name="COPD" id="COPD" />
-                <label for="COPD">COPD</label>
-              </div>
-              <div>
-                <input type="checkbox" name="strokes" id="strokes" />
-                <label for="strokes">strokes</label>
+                <input type="checkbox" id="arthritis" name="hasArthritis" />
+                <label for="arthritis">arthritis</label>
               </div>
               <div>
                 <input
                   type="checkbox"
-                  name="kidneyDisease"
-                  id="kidney_disease"
+                  id="Cerebral_palsy"
+                  name="hasCerebralPalsy"
                 />
-                <label for="kidney_disease">kidney disease</label>
+                <label for="Cerebral_palsy">Cerebral palsy</label>
               </div>
-            </fieldset> -->
+
+              <div>
+                <input
+                  type="checkbox"
+                  id="muscular_dystrophy"
+                  name="hasMuscularDistrophy"
+                />
+                <label for="muscular_dystrophy">muscular dystrophy</label>
+              </div>
+              <div>
+                <input type="checkbox" id="blind" name="hasBlindness" />
+                <label for="blind">Blindness</label>
+              </div>
+              <div>
+                <input type="checkbox" id="deaf" name="hasDeafness" />
+                <label for="deaf">Deafness</label>
+              </div>
+              <div>
+                <input type="checkbox" id="asthma" name="hasAsthma" />
+                <label for="asthma">Asthma</label>
+              </div>
+            </fieldset>
+            <fieldset class="options_set">
+              <legend>how often do you workout</legend>
+              <div>
+                <input
+                  type="radio"
+                  id="everyDay"
+                  name="workoutFrequency"
+                  value="active"
+                />
+                <label for="everyDay">daily</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="weekly"
+                  name="workoutFrequency"
+                  value="Moderately_active"
+                  required
+                />
+                <label for="weekly">3-5 days a week</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="monthly"
+                  name="workoutFrequency"
+                  value="Lightly_active"
+                />
+                <label for="monthly">1-3 days a week</label>
+              </div>
+              <div>
+                <input
+                  type="radio"
+                  id="never"
+                  name="workoutFrequency"
+                  value="Sedentary"
+                />
+                <label for="never">never</label>
+              </div>
+            </fieldset>
+
+            <div class="strengthSetContainer">
+              <fieldset class="strengthSet">
+                <legend>rate your physical strength</legend>
+                <input
+                  type="radio"
+                  name="strength"
+                  id="one"
+                  value="1"
+                  required
+                />
+                <label for="one">1</label>
+                <input type="radio" name="strength" id="two" value="2" />
+                <label for="two">2</label>
+                <input type="radio" name="strength" id="three" value="3" />
+                <label for="three">3</label>
+                <input type="radio" name="strength" id="four" value="4" />
+                <label for="four">4</label>
+                <input type="radio" name="strength" id="five" value="5" />
+                <label for="five">5</label>
+              </fieldset>
+              <fieldset class="strengthSet">
+                <legend>rate your endurance</legend>
+                <input
+                  type="radio"
+                  name="endurance"
+                  id="Eone"
+                  value="1"
+                  required
+                />
+                <label for="Eone">1</label>
+                <input type="radio" name="endurance" id="Etwo" value="2" />
+                <label for="Etwo">2</label>
+                <input type="radio" name="endurance" id="Ethree" value="3" />
+                <label for="Ethree">3</label>
+                <input type="radio" name="endurance" id="Efour" value="4" />
+                <label for="four">4</label>
+                <input type="radio" name="endurance" id="Efive" value="5" />
+                <label for="Efive">5</label>
+              </fieldset>
+            </div>
             <span class="subBtn-container">
               <button class="subBtn">Submit</button>
             </span>
@@ -239,13 +221,16 @@
     </main>
 
     <!-- scripts -->
-    <!-- <script
-      src="../layout/scripts/register-scripts/diet-reactiveUI.js"
+
+    <script
+      src="../layout/scripts/register-scripts/physical-reactiveUI.js"
+      defer
+    ></script>
+
+    <script
+      src="../layout/scripts/register-scripts/handlePhysicalSubmit.js"
+      defer
       type="module"
     ></script>
-    <script
-      src="../layout/scripts/register-scripts/handleDietSubmit.js"
-      type="module" -->
-    <!-- ></script>  -->
   </body>
 </html>
