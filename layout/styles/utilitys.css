@@ -1,0 +1,44 @@
+@import url("./vars.css");
+.text-black{
+
+
+  color: black;
+}
+.text-celadon {
+  color: var(--Celadon);
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-ghost {
+  color: ghostwhite;
+}
+.text-center {
+  text-align: center;
+}
+
+.enterprise-text {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.grid {
+  display: grid;
+}
+.w-full {
+  width: 100%;
+}
+
+
+.hidden{
+
+  visibility: hidden;
+}
+.visible{
+
+  visibility: visible;
+}

@@ -1,0 +1,301 @@
+@import url("../vars.css");
+
+/*local vars*/
+:root {
+  --header-height: 165px;
+}
+/*header stuff*/
+.header-sizes {
+  width: 100vw;
+  margin: 0;
+  /* position: absolute; */
+  padding: 0;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  z-index: 1;
+}
+.header-border {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.header-color {
+  background-color: #02CCFE;
+  color: white;
+}
+
+.bold-header {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.register-tagline {
+  font-weight: 500;
+  font-size: larger;
+}
+/*main section stuff*/
+.mainSection-sizes {
+  height: 50rem;
+  z-index: 1;
+  position: relative;
+}
+
+.mainSection-colors {
+  background-color: var(--Celadon);
+
+}
+.mainSection-layout {
+  place-items: center;
+}
+
+/*form modal stuff*/
+
+.formModal-sizing {
+  z-index: 2;
+  height: calc(100% / 1.1);
+  width: calc(100% / 3);
+  position: relative;
+  overflow-y: scroll;
+}
+
+.formModal-colors {
+  background-color: white;
+  box-shadow: 10px 5px 5px black;
+}
+
+.formModal-border {
+  border-radius: 5px;
+}
+
+.reg-form-layout {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+}
+
+.form-feild-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.form-feild {
+  /* z-index: 1; */
+  width: 80%;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: none;
+
+  height: 30px;
+  border-color: var(--Emerald);
+  border-width: 1px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-style: solid;
+}
+.form-label-pos {
+  /* z-index: 0; */
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+}
+.form-label {
+  opacity: 0.5;
+  cursor: text;
+  user-select: none;
+  color: var(--Celadon);
+}
+
+.modal-head {
+  display: block;
+  margin-bottom: 30px;
+}
+
+
+/*submit button stuff*/
+
+
+.subBtn-container{
+
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+
+.subBtn{
+
+box-sizing: border-box;
+  width: 8rem;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #02CCFE;;
+background-color: white;
+cursor: pointer;
+transition: all 500ms linear 0s;
+}
+
+.subBtn:hover{
+
+
+  background-color: #02CCFE;
+  color: white;
+  font-weight: bold;
+}
+
+.step-count{
+
+  position: absolute;
+  right: 2px;
+  bottom: 0;
+}
+
+
+
+.allergies{
+border-width: 1px;
+border-radius: 5px;
+width: 50%;
+margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+justify-content: center;
+}
+
+
+.diet-choice{
+
+
+  margin-left: 10px;
+  border-color: rgba(247, 10, 10,0.75);
+  border-width: 1px;
+  border-radius: 5px;
+  border-style: solid;
+  width: 250px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.weight-in{
+
+
+  /* width: 80%; */
+  /* border-top-left-radius: 5px; */
+  margin-right: 5px;
+
+}
+
+
+.unit{
+
+display: flex;
+align-items: center;
+color: var(--Forest);
+}
+fieldset{
+
+  border-color: #02CCFE ;
+border-style: solid;
+}
+
+
+
+.disease_default{
+  display: none;
+  
+  
+  }
+
+  .disease{
+
+    border-width: 1px;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 10px;
+      display: flex;
+      flex-flow: column;
+    justify-content: center;
+
+  }
+
+
+ .height_feild{
+
+  width: 80%;
+display: flex;
+gap: 1px;
+margin-left: 5px;
+
+ }
+.ft_input{
+
+
+
+  padding-left: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--Celadon);
+  width: 100px;
+
+margin-right: 5px;
+
+} 
+
+.ft_input_container{
+
+  margin-right: 20px;
+}
+.disabilities_default{
+
+
+  display: none;
+}
+
+.disabilities_list{
+
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left:5px;
+border-radius: 5px;
+}
+
+
+.options_set{
+
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-left:5px;
+
+  border-radius: 5px;
+}
+
+.btn_allignment{
+
+
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+}
+
+.strengthSetContainer{
+width: 100%;
+display: flex;
+justify-content: center;
+gap:15px;
+align-items: center;
+}
+.strengthSet{
+padding: 15px;
+width: fit-content;
+justify-self: center;
+
+}
