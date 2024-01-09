@@ -1,80 +1,27 @@
 <!DOCTYPE html>
 
 <html>
-<head>
-    <title>User Login</title>
-    <style>
-        body {
-          font-family: Georgia, "Times New Roman", Times, serif;
-
-        }
-
-        
-        form {
-            width: 300px;
-            margin: 250px auto;
-            border: 1px solid #ccc;
-            padding: 20px;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        input {
-            width: 100%;
-            padding: 5px;
-            border: 1px solid #ccc;
-        }
-
-        button {
-            background-color: #008C00;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<body>
-<h1  style="color:#008C00">User Login</h1>
-<form
- 
-required>
-
-<label for="">Email:</label><input type="email">
-    
-<label
- 
-for="password">Password:</label>
-
-    
-<input
- 
-type="password"
- 
-id="password"
- 
-name="password"
- 
-required>
-
-
-    
-<button
- 
-type="submit">Login</button>
-
-</form>
-</body>
-
-<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>myLife | login</title>
+    <title>myLife | Login</title>
+    <link rel="stylesheet" href="../layout/styles/login-styles/topBanner.css" />
+    <link rel="stylesheet" href="../layout/styles/login-styles/root.css" />
   </head>
-  <body>hi</body>
-</html>
+  <body>
+    <div class="banner">
+      <h1 class="banner-text">Welcome back</h1>
+    </div>
+    <form required id="main_form">
+      <label for="mail">Email:</label>
+      <input type="email" name="mail" id="mail" required />
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <button type="submit">Login</button>
+    </form>
 
+    <script
+      src="../layout/scripts/login-scripts/handleLoginSubmit.js"
+      defer
+      type="module"
+    ></script>
+  </body>
+</html>

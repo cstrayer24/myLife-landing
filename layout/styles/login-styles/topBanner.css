@@ -1,0 +1,19 @@
+@import url("../vars.css");
+
+.banner{
+
+
+
+    width: 100vw;
+    text-align: center;
+    margin: 0;
+    background-color: var(--Emerald);
+    height: 100px;
+    padding-top: 15px;
+}
+
+.banner-text{
+
+color: antiquewhite;
+    margin: 0;
+}
