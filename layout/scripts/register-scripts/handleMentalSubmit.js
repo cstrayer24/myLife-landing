@@ -1,5 +1,6 @@
 import formDataToObj from "../formDataToObj.js";
 import apiUrl from "../apiUrl.js";
+import appUrl from "../appUrl.js";
 const form = document.querySelector("#main_form");
 
 form.addEventListener("submit", async (e) => {
@@ -60,5 +61,8 @@ form.addEventListener("submit", async (e) => {
   if (res.ok) {
     console.log(res);
     //TODO pipe new user into application
+    const body = await res.json();
+
+    window.location.assign(`${appUrl}?sessionid=${body.id}`);
   }
 });
