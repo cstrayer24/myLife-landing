@@ -1,2 +1,2 @@
-const appUrl = "http://localhost:3000";
+const appUrl = "https://mylife-two.vercel.app";
 export default appUrl;
